@@ -1,9 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import NavigationMenu from "../components/NavigationMenu";
 
 export default function Skills() {
   return (
     <>
+      <Helmet>
+        <title>Skills & Technologies | Hitesh</title>
+        <meta name="description" content="Explore Hitesh's technical skills, including React, NextJs, TailwindCSS, and MongoDB." />
+      </Helmet>
       <div className="page">
         <div className="page-col">
           <h1 className="doto-font text-2xl font-bold">

@@ -1,9 +1,14 @@
+import { Helmet } from 'react-helmet-async';
 import NavigationMenu from '../components/NavigationMenu';
 import { Link } from 'react-router-dom';
 
 export default function Blog() {
   return (
     <>
+      <Helmet>
+        <title>Blog | Hitesh</title>
+        <meta name="description" content="Read Hitesh's latest blogs on web development, design engineering, and performance optimization." />
+      </Helmet>
       <div className="page">
         <div className="page-col">
           <h1 className="doto-font text-2xl font-bold">

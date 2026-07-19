@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import NavigationMenu from "../components/NavigationMenu";
 
 {
@@ -31,6 +32,10 @@ const videos = [
 export default function Arts() {
   return (
     <>
+      <Helmet>
+        <title>Arts & Private Projects | Hitesh</title>
+        <meta name="description" content="View Hitesh's private design projects and UI interactions." />
+      </Helmet>
       <div className="art-page mb-24 md:mb-0">
         <div className="page-col">
           <h1 className="doto-font text-2xl font-bold mb-6">

@@ -1,5 +1,6 @@
 import NavigationMenu from '../components/NavigationMenu';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Paragraph = ({ children }) => (
   <p className="text-sm font-light text-muted-foreground [&>strong]:text-foreground [&>code]:mx-0.5 [&>code]:whitespace-nowrap [&>code]:rounded-sm [&>code]:border [&>code]:bg-muted/50 [&>code]:px-1 [&>code]:text-xs leading-relaxed">
@@ -105,9 +106,14 @@ const CodeSnippet = ({ children }) => (
 export default function BlogPerformanceOptimization() {
   return (
     <>
+      <Helmet>
+        <title>Website Performance Optimization | Hitesh</title>
+        <meta name="description" content="A comprehensive guide and checklist for optimizing website performance." />
+      </Helmet>
       <article className="page px-4 sm:px-0">
         <div className="flex h-16 items-center justify-between">
           <Link
+            aria-label="Back to blogs"
             className="flex h-8 w-8 items-center justify-center rounded-full bg-muted/50 text-muted-foreground duration-200 hover:bg-muted hover:text-black dark:text-white"
             to="/blogs"
           >

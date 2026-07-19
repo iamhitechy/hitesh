@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import NavigationMenu from "../components/NavigationMenu";
 
 const workExperiences = [
@@ -54,6 +55,10 @@ const workExperiences = [
 export default function Works() {
   return (
     <>
+      <Helmet>
+        <title>Work Experience | Hitesh</title>
+        <meta name="description" content="Explore Hitesh's work experience and career journey as a Senior React Developer and Frontend Developer." />
+      </Helmet>
       <div className="page">
         <div className="page-col mt-8">
           <h1 className="doto-font text-2xl font-bold">

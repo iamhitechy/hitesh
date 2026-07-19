@@ -1,16 +1,21 @@
+import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Works from "./pages/Works";
-import Arts from "./pages/Arts";
-import Skills from "./pages/Skills";
-import Blog from "./pages/Blog";
-import BlogPerformanceOptimization from "./pages/BlogPerformanceOptimization";
+import { HelmetProvider } from "react-helmet-async";
 import ThemeToggle from "./components/ThemeToggle";
+
+const Home = lazy(() => import("./pages/Home"));
+const Works = lazy(() => import("./pages/Works"));
+const Arts = lazy(() => import("./pages/Arts"));
+const Skills = lazy(() => import("./pages/Skills"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPerformanceOptimization = lazy(() => import("./pages/BlogPerformanceOptimization"));
 
 function App() {
   return (
-    <Router>
-      <ThemeToggle />
+    <HelmetProvider>
+      <Router>
+        <ThemeToggle />
+        <Suspense fallback={<div className="flex h-screen items-center justify-center dark:bg-zinc-950 dark:text-white">Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/work" element={<Works />} />
@@ -19,9 +24,9 @@ function App() {
             <Route path="/blogs" element={<Blog />} />
             <Route path="/blog/website-performance-optimization" element={<BlogPerformanceOptimization />} />
           </Routes>
-      
-     
-    </Router>
+        </Suspense>
+      </Router>
+    </HelmetProvider>
   );
 }
 

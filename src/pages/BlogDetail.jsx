@@ -1,11 +1,17 @@
 import NavigationMenu from '../components/NavigationMenu';
+import { Helmet } from 'react-helmet-async';
 
 export default function BlogDetail() {
   return (
     <>
+      <Helmet>
+        <title>Create SVG Line Animation | Hitesh</title>
+        <meta name="description" content="Learn how to create an SVG line animation using basic HTML and CSS." />
+      </Helmet>
       <article className="page px-4 sm:px-0">
         <div className="flex h-16 items-center justify-between">
           <a
+            aria-label="Back to blogs"
             className="flex h-8 w-8 items-center justify-center rounded-full bg-muted/50 text-muted-foreground duration-200 hover:bg-muted hover:text-black dark:text-white"
             href="/blogs"
           >
