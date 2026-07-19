@@ -17,13 +17,26 @@ export default function Projects() {
             </div>
             <div className="z-10 h-44 min-h-44 overflow-hidden rounded-sm bg-gradient-to-br from-brand/10 via-muted/5 to-transparent p-4">
               <div className="flex h-full w-full flex-col items-center justify-center gap-3 text-center">
+                {/* 
                 <div className="flex h-16 w-16 items-center justify-center rounded-3xl border border-dashed border-border/50 bg-white/80 text-brand shadow-sm dark:bg-slate-900/80">
-                  <picture>
-                    <source media="(prefers-color-scheme: light)" srcSet="/black-logo.png" />
-                    <source media="(prefers-color-scheme: dark)" srcSet="/logo.png" />
-                    <img src="/black-logo.png" alt="Logo" className="h-8 w-8 object-contain" />
-                  </picture>
-                </div>
+                  <img src="/black-logo.png" alt="Logo" className="h-8 w-8 object-contain dark:invert" />
+                </div> 
+                */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-muted-foreground duration-200 group-hover:text-black dark:group-hover:text-white"
+                >
+                  <circle cx="12" cy="8" r="6"></circle>
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                </svg>
                 <span className="text-xs uppercase tracking-[0.18em] text-muted-foreground/80">Open certificate</span>
               </div>
             </div>

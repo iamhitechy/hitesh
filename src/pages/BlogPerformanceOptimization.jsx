@@ -1,4 +1,5 @@
 import NavigationMenu from '../components/NavigationMenu';
+import { Link } from 'react-router-dom';
 
 const Paragraph = ({ children }) => (
   <p className="text-sm font-light text-muted-foreground [&>strong]:text-foreground [&>code]:mx-0.5 [&>code]:whitespace-nowrap [&>code]:rounded-sm [&>code]:border [&>code]:bg-muted/50 [&>code]:px-1 [&>code]:text-xs leading-relaxed">
@@ -106,9 +107,9 @@ export default function BlogPerformanceOptimization() {
     <>
       <article className="page px-4 sm:px-0">
         <div className="flex h-16 items-center justify-between">
-          <a
+          <Link
             className="flex h-8 w-8 items-center justify-center rounded-full bg-muted/50 text-muted-foreground duration-200 hover:bg-muted hover:text-black dark:text-white"
-            href="/blogs"
+            to="/blogs"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +126,7 @@ export default function BlogPerformanceOptimization() {
               <path d="m12 19-7-7 7-7"></path>
               <path d="M19 12H5"></path>
             </svg>
-          </a>
+          </Link>
         </div>
         
         <div className="my-6 mb-14 space-y-1">

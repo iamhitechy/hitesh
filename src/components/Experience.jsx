@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Experience() {
   return (
     <div className="box relative flex w-full justify-between">
@@ -14,11 +16,7 @@ export default function Experience() {
           <div className="flex flex-col gap-1.5 sm:flex-row sm:items-center">
             <div className="h-9 w-9 overflow-hidden rounded-xl border">
               <div className="flex h-9 w-9 items-center justify-center bg-gradient-to-br from-accent to-transparent text-base">
-                <span className="text-2xl">
-                  <svg width="16px" height="16px" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.5089 10.1066L13.0911 4.31803C12.9344 4.05199 12.5482 3.83432 12.2329 3.83432H10.0991C9.60314 3.83432 9.39981 3.49237 9.64721 3.07442L10.8173 1.0978C10.9102 0.940926 10.91 0.747804 10.8168 0.5911C10.7236 0.434397 10.5516 0.337891 10.3655 0.337891H7.38875C7.07344 0.337891 6.68637 0.555072 6.52858 0.820524L0.744369 10.5524C0.586609 10.8178 0.586487 11.2522 0.744156 11.5177L2.23248 14.0243C2.48046 14.442 2.88713 14.4425 3.13616 14.0254L4.29915 12.0781C4.54819 11.661 4.95486 11.6615 5.20283 12.0792L6.25715 13.8548C6.41479 14.1203 6.80177 14.3376 7.11707 14.3376H13.9955C14.3109 14.3376 14.6978 14.1203 14.8555 13.8548L16.5072 11.0731C16.6649 10.8075 16.6656 10.3726 16.5089 10.1066ZM11.8932 9.828C12.1396 10.2465 11.9355 10.5889 11.4395 10.5889H6.08915C5.5932 10.5889 5.39029 10.2472 5.63826 9.82956L8.31555 5.32067C8.56352 4.90304 8.96929 4.90305 9.21723 5.3207L11.8932 9.828Z" fill="#ffffff"></path>
-                  </svg>
-                </span>
+                <span className="font-medium opacity-80">W</span>
               </div>
             </div>
             <span className="text-xs font-medium sm:text-sm">WT</span>
@@ -104,7 +102,7 @@ export default function Experience() {
 
       <div className="relative flex pt-6">
         <div className="absolute -top-1 left-0 flex w-full justify-end">
-          <a href="/work">
+          <Link to="/work">
             <span className="jetbrains-mono flex gap-1 text-xs font-medium text-muted-foreground duration-200 hover:text-black dark:text-white">
               <span>ALL</span>
               <svg height="1em" width="1em" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -115,7 +113,7 @@ export default function Experience() {
                 </g>
               </svg>
             </span>
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col gap-2 opacity-0">
           <div className="flex items-center gap-2">

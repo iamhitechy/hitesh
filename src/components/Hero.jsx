@@ -69,7 +69,7 @@ export default function Hero() {
           looking for new opportunities to learn and grow.
         </span>
         <div className="mt-5 flex items-center gap-2">
-          <a target="_blank" href="#" rel="noreferrer">
+          <a target="_blank" href="https://x.com/iamhitechy" rel="noreferrer">
             <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-3.5 [&_svg]:shrink-0 bg-cardColor text-black dark:text-white hover:bg-cardColorForeground py-2 shadow-[0px_32px_64px_-16px_#0000004c,0px_16px_32px_-8px_#0000004c,0px_8px_16px_-4px_#0000003d,0px_4px_8px_-2px_#0000003d,0px_-8px_16px_-1px_#00000029,0px_2px_4px_-1px_#0000003d,0px_0px_0px_1px_#000000,inset_0px_0px_0px_1px_#ffffff14,inset_0px_1px_0px_#ffffff33] h-6 px-2.5 text-xs hover:text-brand">
               <svg
                 height="1em"
@@ -90,11 +90,11 @@ export default function Hero() {
                   ></path>
                 </g>
               </svg>
-              Twitter DM
+              X DM
             </button>
           </a>
           <span className="text-xxs text-muted-foreground/60">OR</span>
-          <a target="_blank" href="#" rel="noreferrer">
+          <a href="mailto:hello@hitesh.im">
             <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-3.5 [&_svg]:shrink-0 bg-cardColor text-black dark:text-white hover:bg-cardColorForeground py-2 shadow-[0px_32px_64px_-16px_#0000004c,0px_16px_32px_-8px_#0000004c,0px_8px_16px_-4px_#0000003d,0px_4px_8px_-2px_#0000003d,0px_-8px_16px_-1px_#00000029,0px_2px_4px_-1px_#0000003d,0px_0px_0px_1px_#000000,inset_0px_0px_0px_1px_#ffffff14,inset_0px_1px_0px_#ffffff33] h-6 px-2.5 text-xs hover:text-brand">
               <svg
                 height="1em"
